@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+
+  --custom-top-height: 35vh;
+  --custom-middle-height: 50vh;
+  --custom-bottom-height: 12vh;
+}
+
+.big-style {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-width: 4px;
+  border-color: rgb(13, 3, 66); */
+  overflow: visible;
+}
+
+.lexend {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  html, body {
+    @apply overflow-hidden;
+  }
+}
+
+/* // <weight>: Use a value from 100 to 900
+// <uniquifier>: Use a unique and descriptive class name */
+
+
+
